@@ -1,0 +1,70 @@
+$maincolor:#6096ba;
+$hoverColor:#274c77;
+.SearchLineContainer{
+    width: 75.5vw;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5.4vw;
+    margin-bottom: 3.65vw;
+    margin-left: 4.3vw;
+    .addPeople{
+        display: none;
+        width: 1.95vw;
+        height: 1.95vw;
+        background: url('../../img/addpeople_hover.png');
+        background-size: cover;
+        cursor: pointer;
+        &:hover{
+            background: url('../../img/addpeople.png');
+        background-size: cover;
+        }
+    }
+    .addRoom{
+        width: 1.95vw;
+        height: 1.95vw;
+        background: url('../../img/addRoom.png');
+        background-size: cover;
+        cursor: pointer;
+        &:hover{
+            background: url('../../img/addRoom_hover.png');
+        background-size: cover;
+        }
+    }
+    .SearchContainer{
+        width: 29.4vw;
+        height: 2.18vw;
+        background-color: #fff;
+        
+        
+        border-radius: 18px;
+        display: flex;
+        
+        .searchBlock{
+            width: 25vw;
+            border: 0px;
+            height: 2.18vw;
+            border-radius: 1.17vw 0 0 1.17vw;
+            padding: 0.39vw 0.91vw;
+            font-size:0.98vw ;
+        }
+        textarea:focus, input:focus{
+            outline: none;
+        }
+        .searchButton{
+            display: inline;
+            width: 4.5vw;
+            height: 2.2vw;
+            border-radius: 0px 1.17vw 1.17vw 0;
+            background: url('../../img/searchIcon.png');
+            background-size: contain;
+            background-repeat: no-repeat;    
+            background-position: center; 
+            background-color: $maincolor;
+            cursor: pointer;
+            border: 0;
+            &:hover{
+                background-color: $hoverColor;
+            }
+        }
+    }
+}

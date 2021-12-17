@@ -1,0 +1,100 @@
+.ItemContainer{
+    position: relative;
+    margin-right: 1.67vw;
+    margin-bottom: 0.9vw;
+    border-radius: 0 0 4px 4px ;
+    overflow: hidden;
+    .imgContainer{
+        width: 11vw;
+        height: 8.5vw;
+        overflow: hidden;
+        .roomPic{
+            width: 11vw;
+            height: 8.5vw;
+            
+            border-radius: 4px 4px 0 0 ;
+            transition: all 0.4s ease-in-out;
+            object-fit: cover;
+    
+        }
+    }
+    
+    .nmberRoom{
+        width: 11vw;
+        height: 1.98vw;
+        background-color: #F5F1F1;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.28vw;
+        line-height: 1.98vw;
+        text-align: center;
+        border-radius: 0 0 4px 4px ;
+
+    }
+    .coverContainer{
+        position: absolute;
+        top: 0;
+        display: none;
+        .cover{
+            width: 11vw;
+            height:8.5vw;
+            background-color: rgba(122,122,122,0.72);
+            border-radius: 4px 4px 0 0 ;
+            
+        }
+        .opretors{
+            position: absolute;
+            top: 0;
+            width: 8.68vw;
+            margin: 2.9vw 1.08vw;
+            display: flex;
+            justify-content: space-between;
+            .addIcon, .WriteIcon , .InfoIcon{
+                width: 2.5vw;
+                height: 2.5vw;
+                cursor: pointer;
+               
+                                             
+            }
+            .addIcon{
+                background: url('/src/img/addicon.png');
+                background-size: cover;
+                &:hover{
+                    background: url('/src/img/addiconhover.png');
+                    background-size: cover;
+                } 
+            }
+             
+            .WriteIcon{
+                background: url('/src/img/write.png');
+                background-size: cover;
+                &:hover{
+                    background: url('/src/img/write_hover.png') ;
+                    background-size: cover;
+                } 
+            } 
+            .InfoIcon{
+                background: url('/src/img/info.png');
+                background-size: cover;
+                &:hover{
+                    background: url('/src/img/info_hovcer.png');
+                    background-size: cover;
+                } 
+            }
+        }
+       
+       
+       
+    }   
+    
+    &:hover{
+        .coverContainer{
+            display: block;
+        }
+        .roomPic{
+            transform: scale(1.2);
+        }
+       
+    }
+}

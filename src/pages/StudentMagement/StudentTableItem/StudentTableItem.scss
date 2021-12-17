@@ -1,0 +1,40 @@
+.ContentTable{
+    background-color: #F2F2F2;
+    height: 2.4vw;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.98vw;
+    line-height: 2.4vw;
+    text-align: center;
+    .opreatorStudent{
+        display: flex;
+        justify-content: space-around;
+        height: 2.4vw;
+        align-items: center;
+        
+        .editorStudent,.deleteStudent{
+            width: 1.3vw;
+            height: 1.3vw;   
+            cursor: pointer;
+    
+        }
+        .editorStudent{
+            background: url('../../../img/editor.png');
+            background-size: cover;
+            &:hover{
+                background: url('../../../img/editor_hover.png');
+            background-size: cover;
+            }
+        }
+        .deleteStudent{
+            background: url('../../../img/delete.png');
+            background-size: cover;
+            &:hover{
+                background: url('../../../img/delete_hover.png');
+                background-size: cover;
+            }
+        }
+    }
+   
+}

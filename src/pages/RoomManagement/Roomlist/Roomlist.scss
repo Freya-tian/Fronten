@@ -1,0 +1,15 @@
+.Container{
+    width:calc(100vw - 14.7vw ) ;
+    .List{
+        width: 75.5vw;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        
+        padding: 0;
+        
+    }
+    .List :nth-child(6n){
+        margin-right: 0px;
+    }
+}

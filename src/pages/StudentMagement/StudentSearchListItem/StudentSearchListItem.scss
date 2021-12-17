@@ -1,0 +1,64 @@
+.StudentItemContainer{
+    width: 37.6vw;
+    height: 12.3vw;
+    background-color: #F8F8F8;
+    display: flex;
+   
+    padding: 0;
+    margin-bottom: 0.9vw;
+    .AvatarContainer{
+        width: 6.5vw;
+        height: 6.5vw;
+        overflow: hidden;
+        margin: 3.3vw 1.89vw 2.4vw 4.4vw;
+        .Avatar{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .Info{
+        width: 17.8vw;
+        max-width: 17.8vw;
+        color: #444444;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 0.97vw;
+        margin-top: 1.4vw;
+        .StudentID,.StudenName,.StudenCountry,.StudenPhone,.StudenRoom{
+            margin-top:0.4vw ;
+        }
+
+    }
+    .opretors{
+        width:2.3vw ;
+        margin-top: 3.1vw;
+        margin-left: 20px;
+        .editorStudent,.deleteStudent{
+            width: 2.3vw;
+            height: 2.3vw;
+            cursor: pointer;
+        }
+        .editorStudent{
+            background: url('../../../img/editor.png');
+            background-size: cover;
+            &:hover{
+                background: url('../../../img/editor_hover.png');
+            background-size: cover;
+    
+            }
+        }
+        .deleteStudent{
+            background: url('../../../img/delete.png');
+            background-size: cover;
+            margin-top: 2.1vw;
+            &:hover{
+                background: url('../../../img/delete_hover.png');
+            background-size: cover;
+    
+            }
+        }
+    }
+ 
+}

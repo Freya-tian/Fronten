@@ -1,0 +1,18 @@
+.StudentTable{
+    width: 75.5vw;
+    margin-left: 4.3vw;
+    .TitleTable{
+        background: #B6B6B6;
+        height: 3vw;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight:bold;
+        font-size: 1.3vw;
+        line-height: 3vw;
+        color: #000000;
+        text-align: center;
+    }
+}
+.StudentTable:last-child{
+    margin-bottom: 30px;
+}
