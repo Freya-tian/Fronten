@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import {Link} from 'react-router-dom'
 import './SerachBlock.scss'
 export default class SerachBlock extends Component {
+    // 调用父级传来的函数，向父级传参
     search = () =>{
         console.log(this.keyWordElement.value);
         this.props.getval(this.keyWordElement.value)

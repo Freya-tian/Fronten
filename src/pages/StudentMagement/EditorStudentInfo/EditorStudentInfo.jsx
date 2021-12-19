@@ -23,6 +23,7 @@ export default class EditorStudentInfo extends Component {
         chooseId: '',
         visible: true
     }
+    // 获取用户中意的房间号
     getroomwant = (id) => {
         fetch(`/api/rooms/want?personId=${id}`, {
             headers: {
@@ -38,14 +39,12 @@ export default class EditorStudentInfo extends Component {
         })
 
     }
-
+    // 修改电话号码
     changePhone = (event) => {
         let user = this.state.userInfo
         user.phone = this.refs.phone.value
         this.setState({
             userInfo: user
-
-
         })
     }
     changePet = () => {
@@ -68,6 +67,8 @@ export default class EditorStudentInfo extends Component {
 
         })
     }
+
+    // 判断选择的房间
     ChooseId = (id) => {
         this.setState({
             chooseId: id
@@ -75,6 +76,7 @@ export default class EditorStudentInfo extends Component {
 
         console.log(this.state.chooseId);
     }
+    // 提交申请
     SubmitChange = () => {
         fetch("/api/change/person", {
             method: 'POST',

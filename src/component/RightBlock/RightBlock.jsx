@@ -10,13 +10,15 @@ import './RightBlock.scss'
 
 
 import SearchBlock from '../SerachBlock/SerachBlock'
-import Home from '../HomePage/HomePage'
+
 export default class RightBlock extends Component {
     state={
         value:'',
         visible:true,
         studentpath:'',   
     }
+
+    // 从搜索框 searchBlock 获取搜索的值
     searchValue=(val)=>{
         console.log("val:"
         +val);
@@ -31,7 +33,7 @@ export default class RightBlock extends Component {
             visible:visible
         })
     }
-
+    // 从子组件StudentSearchList或者StudentList获取参数传给EditorStudentInfo，控制信息展现
     getStudentPath=(path,status,name,age,gender,email,phone,country,pet,special,roomId,roomNum)=>{
         if(path.length !==0){
             console.log(this.state.studentpath);
@@ -57,6 +59,7 @@ export default class RightBlock extends Component {
         
         console.log(this.state);
     }
+    // 从子组件EditorStudentInfo或者homepage组件获取状态来控制搜索框是否显示
     getStatus=(status)=>{
         this.setState({
             visible:status

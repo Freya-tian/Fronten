@@ -10,6 +10,7 @@ export default class MenuSilder extends Component {
     menus:[],
     counter:0
   }  
+  //接口获取菜单
   GetDomitory = () =>{
     let obj=[];
     fetch("/api/buildings", {
@@ -28,13 +29,15 @@ export default class MenuSilder extends Component {
     })
     this.setState({counter:0})
   }; 
+  // 向父级传递参数
   returnPath = (path)=>{
     this.props.returnId(path)
   }
-  
+  //页面一加载就执行
   componentDidMount(){
     this.GetDomitory()
-  }    
+  }  
+  // 处理点击事件  /
   handleClick = e => {
         console.log('click ', e);
         this.props.returnId(e.keyPath[1],e.key)
