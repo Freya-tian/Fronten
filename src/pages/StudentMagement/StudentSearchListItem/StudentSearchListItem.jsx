@@ -23,7 +23,7 @@ export default class StudentSearchListItem extends Component {
         })
     }
     render() {
-        const { _id, fullname, country, phone, status } = this.props
+        const { _id, fullname, country, phone, status,liveNumber } = this.props
         return (
             <li className='StudentItemContainer'>
                 <div className='AvatarContainer'>
@@ -48,7 +48,7 @@ export default class StudentSearchListItem extends Component {
                     </div>
                     <div className="StudenRoom">
                         <span>№ Room :</span>
-                        <span>101</span>
+                        <span>{liveNumber}</span>
                     </div>
                 </div>
 
