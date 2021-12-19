@@ -50,10 +50,10 @@
                                              
             }
             .addIcon{
-                background: url('/src/img/addicon.png');
+                background: url('/src/img/user.png');
                 background-size: cover;
                 &:hover{
-                    background: url('/src/img/addiconhover.png');
+                    background: url('/src/img/user_ho.png');
                     background-size: cover;
                 } 
             }
@@ -87,5 +87,16 @@
        .roomPic{
            transform: scale(1.2);
        }
+    }
+ 
+}
+
+.poptable{
+    width: 100%;
+    .titleTable{
+        width: 100%;
+        th{
+            width: 20%;
+        }
     }
 }

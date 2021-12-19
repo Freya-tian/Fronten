@@ -3,33 +3,21 @@ $hoverColor:#274c77;
 .SearchLineContainer{
     width: 75.5vw;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     margin-top: 5.4vw;
     margin-bottom: 3.65vw;
     margin-left: 4.3vw;
-    .addPeople{
-        display: none;
-        width: 1.95vw;
-        height: 1.95vw;
-        background: url('../../img/addpeople_hover.png');
+    .optimition{
+        width: 2.18vw;
+        height: 2.18vw;
+        background-image: url('/src/img/optimizetion.png');
         background-size: cover;
-        cursor: pointer;
         &:hover{
-            background: url('../../img/addpeople.png');
+            background-image: url('/src/img/optimizetion_hover.png');
         background-size: cover;
         }
     }
-    .addRoom{
-        width: 1.95vw;
-        height: 1.95vw;
-        background: url('../../img/addRoom.png');
-        background-size: cover;
-        cursor: pointer;
-        &:hover{
-            background: url('../../img/addRoom_hover.png');
-        background-size: cover;
-        }
-    }
+    
     .SearchContainer{
         width: 29.4vw;
         height: 2.18vw;

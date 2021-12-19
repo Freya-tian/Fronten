@@ -58,22 +58,22 @@
                                              
             }
             .addIcon{
-                background: url('/src/img/addicon.png');
+                background: url('/src/img/user.png');
                 background-size: cover;
                 &:hover{
-                    background: url('/src/img/addiconhover.png');
+                    background: url('/src/img/user_ho.png');
                     background-size: cover;
                 } 
             }
              
-            .WriteIcon{
-                background: url('/src/img/write.png');
-                background-size: cover;
-                &:hover{
-                    background: url('/src/img/write_hover.png') ;
-                    background-size: cover;
-                } 
-            } 
+            // .WriteIcon{
+            //     background: url('/src/img/write.png');
+            //     background-size: cover;
+            //     &:hover{
+            //         background: url('/src/img/write_hover.png') ;
+            //         background-size: cover;
+            //     } 
+            // } 
             .InfoIcon{
                 background: url('/src/img/info.png');
                 background-size: cover;

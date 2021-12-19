@@ -1,0 +1,135 @@
+$maincolor:#274c77;
+$hover:#6096ba;
+.EditorContainer{
+    width: 75.5vw;
+   
+   
+   
+    margin-top: 2.4vw;
+    margin-bottom: 3.65vw;
+    margin-left: 4.3vw;
+    .avator{
+        display: flex;
+        
+        justify-content:Center;
+        width: 6.5vw;
+        height: 6.5vw;
+        overflow: hidden;
+        border-radius: 50%;
+        margin:0 auto;
+        >img{
+            width: 6.5vw;
+            height: 6.5vw;
+            object-fit: cover;
+        }
+    }
+    .cos{
+        margin-top: 2.6vw;
+        .Infos{
+            width: 67vw;
+            background: #FAFAFB; 
+            display: flex;      
+            flex-wrap: wrap; 
+            justify-content: space-around;
+            padding: 0;
+            padding-bottom: 1.6vw;
+            margin: 0 auto;
+            border-radius: 11px;
+            
+            li{
+                width: 26.8vw;
+                min-height: 3.98vw;
+                padding-left: 1.3vw;
+                margin-top: 1.6vw;
+                background: #FFFFFF;
+                border-radius: 1.4vw;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 1.3vw;
+                line-height: 3.98vw;
+                overflow-x: hidden;
+                // margin-right: 4.88vw;
+                input{
+                    border: 0;
+                }
+                textarea:focus, input:focus{
+                    outline: none;
+                }
+            }
+          
+        }
+        .Infos::nth-of-type(2n)
+        {
+            margin-right: 0 !important;
+        }
+    }
+    .roomlist{
+        width: 67vw;
+        background: #FAFAFB; 
+        border-radius: 11px;
+        margin: 1.95vw auto;
+        max-height: 35.8vw;
+        overflow-y: scroll;
+        .roominfo{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            .List{
+                display: flex;
+                cursor: pointer;
+                justify-content: center;
+                width: 11.7vw;
+                height: 4.2vw;
+                margin: 20px 0;
+                align-items: center;
+                background: #fff;
+                margin-left: 30px;
+                border-radius: 1.4vw;
+                .Activityone{
+                    width: 2.86vw;
+                    height: 2.86vw;
+                    background: url("/src/img/liked.png");
+                    background-size: cover;   
+                     
+                       
+                }
+
+                .actived{
+                    width: 2.86vw;
+                    height: 2.86vw;
+                    background: url("/src/img/like.png");
+                    background-size: cover; 
+                }
+                .RoomNumber{
+                  line-height: 2.86vw;
+                  margin-left: 10px;  
+                }
+                &:hover{
+                    .Activityone{
+                        background: url("/src/img/like.png");
+                        background-size: cover;
+                    } 
+                    
+                } 
+            }
+        }
+    }
+
+    .SubmitChange{
+        width: 23.9vw;
+        height: 4.9vw;
+        border-radius: 1.3vw;
+        margin: 0 auto;
+        display: block;
+        background: $maincolor;
+        border:0;
+        color: #fff;
+        font-size: 2.56vw;
+        font-weight: 700;
+        &:hover{
+            background: $hover;
+        }
+    }
+   
+}
