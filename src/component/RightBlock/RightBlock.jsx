@@ -86,8 +86,8 @@ export default class RightBlock extends Component {
                     <Route  path={`/${changeId[0]}/Student/Search`} element={<StudentSearchList dormitoryId={changeId[0]}  value={this.state.value} StudentPath = {this.getStudentPath}/>}></Route>       
 
                     <Route exact path={`/${this.state.studentpath.length==0?sessionStorage.getItem("studentpath"):this.state.studentpath}`} element={<EditorStudentInfo {...this.state} removeEditor={this.removeEditor} returnStatus={this.getStatus}/>}></Route>            
-                    <Route path={'/home'} element={<HomePage returnStatus={this.getStatus}/>}></Route>
-                    <Route path={'/'} element={<Navigate exact from='/' to="/home" ></Navigate>}></Route>
+                    <Route path={'/admin/home'} element={<HomePage returnStatus={this.getStatus}/>}></Route>
+                    <Route path={'/'} element={<Navigate exact from='/' to="/admin/home" ></Navigate>}></Route>
                     
                  </Routes>  
                  
