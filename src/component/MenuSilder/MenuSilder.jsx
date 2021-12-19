@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import { Menu } from 'antd';
 import { Link } from 'react-router-dom';
 import './MenuSilder.scss'
-import 'antd/dist/antd.css';
+import 'antd/dist/antd.min.css';
 const { SubMenu } = Menu;
 export default class MenuSilder extends Component {
    state = {
